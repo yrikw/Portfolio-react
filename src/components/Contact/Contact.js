@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Stylesheet
-import '../css/Contact.css'
+import './Contact.css'
 
 const Contact = () => {
     return (

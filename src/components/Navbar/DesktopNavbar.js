@@ -1,9 +1,8 @@
 import React from 'react'
-import MediaQuery from "react-responsive";
 import { Link } from "react-router-dom";
 import {Tabs, Tab, Box, styled, AppBar, Toolbar }from '@material-ui/core';
 
-import '../css/Navbar.css'
+import './Navbar.css'
 
 const AntTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) => ({
     textTransform: 'none',
@@ -66,7 +65,7 @@ const AntTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) =
 
 
 
-const Navbar = () => {
+const DesktopNavbar = () => {
     const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -78,12 +77,6 @@ const Navbar = () => {
         <>
           <nav>
               <div className="NavbarContainer">
-
-                <MediaQuery query="(max-width: 414px)">
-                    <a>mobile</a>
-                </MediaQuery>
-
-                <MediaQuery query="(min-width: 414px)">
                  <AppBar position="fixed">
                     <Toolbar>
                       <h1>Yuri Ikawa</h1>
@@ -92,8 +85,7 @@ const Navbar = () => {
                                 <StyledTabs
                                     value={value}
                                     onChange={handleChange}
-                                    aria-label="styled tabs example"
-                                >
+                                    aria-label="styled tabs example">
                                     <StyledTab label="About" />
                                     <StyledTab label="Projects" />
                                     <StyledTab label="Contact" />
@@ -103,14 +95,10 @@ const Navbar = () => {
                         </Box>
                         </Toolbar>
                  </AppBar>
-                    
-                   </MediaQuery>
-                
-                
                 </div>
              </nav>
           </>
        )
   }
 
- export default Navbar
+ export default DesktopNavbar

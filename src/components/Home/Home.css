@@ -1,0 +1,15 @@
+.homewrapper {
+  height: 100vh;
+  position: relative;
+  background-color: pink;
+}
+
+.homecontent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80%;
+  height: 3rem;
+}

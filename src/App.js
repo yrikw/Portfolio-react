@@ -1,10 +1,10 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import Navbar from './components/Navbar/Navbar'
+import Home from './components/Home/Home'
+import Projects from './components/Projects/Projects'
+import Contact from './components/Contact/Contact'
 
 
 
@@ -12,16 +12,18 @@ function App() {
   return (
     <div className="App">
       
-      <Router>
+      {/* <Router> */}
         <Navbar />
+        <Home />
+        <Projects />
         
         {/* <Routes>
-         <Route exact={true} path="/home" element={<Home />} />
-         <Route path='/projects' element={<Projects />} />
+         <Route exact={true} path="/" element={<Home />} />
+         <Route path='/' element={<Projects />} />
           
                             
         </Routes> */}
-      </Router>
+      {/* </Router> */}
 </div>
   );
 }
