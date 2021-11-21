@@ -3,7 +3,7 @@
 }
 
 h2 {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 30px;
 }
 
@@ -21,4 +21,16 @@ h2 {
   margin: auto;
   width: 80%;
   height: 3rem;
+}
+
+.nextpage {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.scroll {
+  cursor: pointer;
 }

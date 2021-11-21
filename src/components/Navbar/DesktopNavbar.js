@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React from 'react';
 import {AppBar, Toolbar, Grid }from '@material-ui/core';
 
 import './Navbar.css'
@@ -8,7 +7,6 @@ const DesktopNavbar = () => {
     
     return (
         <>
-        <Grid xs="12" md="12" lg="8">
           <nav>
               <div className="NavbarContainer">
                  <AppBar position="fixed">
@@ -23,7 +21,6 @@ const DesktopNavbar = () => {
                  </AppBar>
                 </div>
              </nav>
-             </Grid>
           </>
        )
   }

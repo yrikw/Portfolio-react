@@ -75,6 +75,7 @@ import './Projects.css';
 import Projectsdata from './resources/Projectsdata'
 
 import {Grid}from '@material-ui/core';
+import { Link as Scroll } from 'react-scroll';
 
 
 function Project() {
@@ -82,14 +83,15 @@ function Project() {
     return (
         <>
             <div className="homewrapper">
-           <div className="homecontent">
-            <h1>Yuri Ikawa</h1>
-            <a>aaaaaa</a>
-            </div>
+                <div className="homecontent">
+                    <h1>Yuri Ikawa</h1>
+                    <a>aaaaaa</a>
+                </div>
+                <Scroll to="projects" smooth={true} className="scroll"><img src={`${process.env.PUBLIC_URL}/downarrow.png`} alt="Logo" className="nextpage" /></Scroll>
             </div>
 
             <div className="projectswrapper">
-            <h2>Projects</h2>
+            <h2 id="projects">Projects</h2>
             <Grid container justify="left" spacing={2}>
         
             {
