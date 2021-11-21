@@ -6,3 +6,19 @@ h2 {
   padding-top: 150px;
   padding-bottom: 30px;
 }
+
+.homewrapper {
+  height: 100vh;
+  position: relative;
+  background-color: pink;
+}
+
+.homecontent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80%;
+  height: 3rem;
+}

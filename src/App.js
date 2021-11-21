@@ -1,9 +1,10 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import Projects from './components/Projects/Projects'
+import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 
 
@@ -11,19 +12,15 @@ import Contact from './components/Contact/Contact'
 function App() {
   return (
     <div className="App">
-      
-      {/* <Router> */}
-        <Navbar />
-        <Home />
-        <Projects />
-        
-        {/* <Routes>
-         <Route exact={true} path="/" element={<Home />} />
-         <Route path='/' element={<Projects />} />
-          
-                            
-        </Routes> */}
-      {/* </Router> */}
+      <Navbar />
+
+　　　　<BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Projects} />
+        <Route exact path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+    </Switch>
+    </BrowserRouter>
 </div>
   );
 }

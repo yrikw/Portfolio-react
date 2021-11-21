@@ -81,6 +81,13 @@ function Project() {
 
     return (
         <>
+            <div className="homewrapper">
+           <div className="homecontent">
+            <h1>Yuri Ikawa</h1>
+            <a>aaaaaa</a>
+            </div>
+            </div>
+
             <div className="projectswrapper">
             <h2>Projects</h2>
             <Grid container justify="left" spacing={2}>
