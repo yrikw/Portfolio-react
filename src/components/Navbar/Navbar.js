@@ -12,12 +12,12 @@ const Navbar = () => {
           <nav>
               <div className="NavbarContainer">
 
-                <MediaQuery query="(max-width: 414px)">
-                    <a>mobile</a>
+              <MediaQuery query="(min-width: 414px)">
+                    <DesktopNavbar />
                 </MediaQuery>
 
-                <MediaQuery query="(min-width: 414px)">
-                    <DesktopNavbar />
+                <MediaQuery query="(max-width: 414px)">
+                    <a>mobile</a>
                 </MediaQuery>
                 
                 

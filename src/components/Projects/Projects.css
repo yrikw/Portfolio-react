@@ -1,36 +1,57 @@
-.projectswrapper {
-  background-color: yellow;
-}
-
-h2 {
-  padding-top: 100px;
-  padding-bottom: 30px;
-}
-
 .homewrapper {
-  height: 100vh;
-  position: relative;
-  background-color: pink;
+  /* height: 100vh; */
 }
 
 .homecontent {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 80%;
-  height: 3rem;
+  font-size: 20px;
 }
 
 .nextpage {
   position: absolute;
   bottom: 50px;
-  left: 0;
-  right: 0;
+
+  right: 50px;
   margin: auto;
+  width: 80px;
 }
 
 .scroll {
   cursor: pointer;
+}
+
+.tech {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  width: 10px;
+}
+
+.rightarrow {
+  width: 100px;
+}
+
+.profilepic {
+  width: 60%;
+}
+
+ul {
+  text-align: center;
+}
+
+.effect-scale {
+  overflow: hidden;
+  width: 320px;
+  height: 180px;
+}
+.effect-scale img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.effect-scale img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
 }

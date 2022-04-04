@@ -7,12 +7,12 @@ const DesktopNavbar = () => {
     
     return (
         <>
-        <Grid  container justify="center" xs="12" md="12" lg="8">
+        <Grid  container>
           <nav>
               <div className="NavbarContainer">
                  <AppBar position="fixed">
                     <Toolbar>
-                      <h1><a href="/">Yuri Ikawa</a></h1>
+                      <h1 ><a href="/">Yuri Ikawa</a></h1>
                         <ul>
                           <li><a href="/">Projects</a></li>
                           <li><a href="/about">About</a></li>

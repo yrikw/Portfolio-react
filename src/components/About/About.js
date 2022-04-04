@@ -4,7 +4,9 @@ import './About.css';
 function About() {
   return (
     <div className="App">
-</div>
+      
+      <p className="button">Resume</p>
+    </div>
   );
 }
 

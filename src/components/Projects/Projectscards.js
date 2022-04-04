@@ -110,16 +110,16 @@ import Projectsdata from './resources/Projectsdata'
 
 
 
-const Projectscards = ({ title, url, classname, image, description, label, date}) => {
+const Projectscards = ({ title, url, classname, image, description, tech, date}) => {
 
   const [state, setState] = useState({ [classname]:false});
 
-    const ExpandMore = styled((props) => {
+  const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
 })(({ theme, expand }) => ({
   transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
+  margin: 'auto',
   transition: theme.transitions.create('transform', {
     duration: theme.transitions.duration.shortest,
   }),
@@ -134,27 +134,28 @@ const [expanded, setExpanded] = React.useState(false);
     return (
         <>
             <Grid item xs={12} md={6} lg={4}> 
-            <Card className="card">
-            <CardHeader
-                title={title}
-                subheader={date}
-            />
-             <img src={image} alt="project" style={{ width: '100%'}}></img>
-            {/* <CardContent>
-           
-            </CardContent>  */}
-            <CardActions disableSpacing>
-            <a href={url}>GITHUB</a>
-              
+            <Card elevation={0}>
+            <div className="card">
+              <div className="effect-scale">
+                <img src={image} alt="project" style={{ width: '100%'}}></img>
+               </div>
+            <CardContent>
+              {/* <p className="date">{date}</p>
+              <h4>{title}</h4>
+              <p className="tech">{tech}</p> */}
+              <a href={url} className="btn" >GITHUB+</a>
+            </CardContent>
+            {/* <CardActions disableSpacing>
+
                 <ExpandMore
                 expand={expanded}
                 onClick={handleExpandClick}
                 aria-expanded={expanded}
                 aria-label="show more"
                 >
-                <img src={`${process.env.PUBLIC_URL}/down-arrow.png`} alt="Logo" />
+                <img src={`${process.env.PUBLIC_URL}/downarrow.png`} className="arrow" />
                 </ExpandMore>
-            </CardActions>
+            </CardActions> */}
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                 <Typography variant="body2" color="text.secondary">
@@ -162,6 +163,7 @@ const [expanded, setExpanded] = React.useState(false);
                 </Typography> 
                 </CardContent>
             </Collapse>
+            </div>
             </Card>
             </Grid>
         </>
