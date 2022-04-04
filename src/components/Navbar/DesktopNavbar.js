@@ -3,7 +3,7 @@ import {AppBar, Toolbar, Grid, Typography, Box }from '@material-ui/core';
 
 import './Navbar.css'
 
-import { Link as Scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const DesktopNavbar = () => {
     
