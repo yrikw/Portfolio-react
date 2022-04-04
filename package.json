@@ -41,6 +41,6 @@
     ]
   },
   "devDependencies": {
-    "react-scroll": "^1.8.4"
+    "react-scroll": "^1.8.6"
   }
 }
