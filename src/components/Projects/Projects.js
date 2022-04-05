@@ -14,7 +14,7 @@ import './Projects.css';
 import Projectsdata from './resources/Projectsdata'
 
 import {Grid}from '@material-ui/core';
-import { Link as Scroll } from 'react-scroll';
+// import { Link as Scroll } from 'react-scroll';
 
 function Project() {
     return (
