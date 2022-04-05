@@ -28,7 +28,7 @@ ul {
   text-align: left;
 }
 
-li {
+.Footer li {
   text-decoration: none;
   width: 120px;
   text-align: left;
@@ -36,6 +36,13 @@ li {
   padding-bottom: 25px;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
+}
+
+.Footer a {
+  text-decoration: none;
+  width: 120px;
+  text-align: left;
+  color: grey;
 }
 
 .copyright {

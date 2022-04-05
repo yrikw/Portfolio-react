@@ -21,9 +21,9 @@ const Footerbar = () => {
 
               <Grid item xs={6} md={6} lg={6}>
                 <ul>
-                    <li>LINKEDIN</li>
-                    <li>GITHUB</li>
-                    <li>INSTAGRAM</li>
+                    <li><a href="https://www.linkedin.com/in/yuri-ikawa-b78227189/">LINKEDIN</a></li>
+                    <li><a href="https://github.com/yrikw">GITHUB</a></li>
+                    <li><a href="https://www.instagram.com/_freshpear/">INSTAGRAM</a></li>
               </ul>
               </Grid>
             </Grid>
