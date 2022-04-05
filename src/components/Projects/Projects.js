@@ -43,7 +43,7 @@ function Project() {
 
             
            
-            <Scroll to="projects" smooth={true} className="scroll"><img src={`${process.env.PUBLIC_URL}/down-arrow.png`} alt="Logo" className="nextpage" /></Scroll>
+            {/* <Scroll to="projects" smooth={true} className="scroll"><img src={`${process.env.PUBLIC_URL}/down-arrow.png`} alt="Logo" className="nextpage" /></Scroll> */}
 
             <div className="projectswrapper">
             <h3 id="projects">VIEW MY PROJECTS</h3>
