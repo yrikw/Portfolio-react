@@ -14,9 +14,7 @@ import './Projects.css';
 import Projectsdata from './resources/Projectsdata'
 
 import {Grid}from '@material-ui/core';
-// import { Link as Scroll } from 'react-scroll';
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link as Scroll } from 'react-scroll';
 
 
 function Project() {
@@ -24,6 +22,7 @@ function Project() {
         <>
             <div className="homewrapper" className="fade">
                <div className="homecontent">
+                
                <h2>HELLO! I'M YURI, WEB DEVELOPER - BASED IN MELBOURNE.</h2>
                 
                 <Grid container>
@@ -34,9 +33,9 @@ function Project() {
 
                     <About />
 
-                    {/* <Grid item lg={12}>
+                    <Grid item lg={12}>
                        <p> I'm a design-minded, detail-oriented web developer in Melbourne with passionate about combining beautiful code and user friendly design.</p>
-                    </Grid> */}
+                    </Grid>
 
                   
                 </Grid>
@@ -46,7 +45,7 @@ function Project() {
 
             
            
-            <Link to="projects" smooth={true} className="scroll"><img src={`${process.env.PUBLIC_URL}/down-arrow.png`} alt="Logo" className="nextpage" /></Link>
+            <Scroll to="projects" smooth={true} className="scroll"><img src={`${process.env.PUBLIC_URL}/down-arrow.png`} alt="Logo" className="nextpage" /></Scroll>
 
             <div className="projectswrapper">
             <h3 id="projects">VIEW MY PROJECTS</h3>

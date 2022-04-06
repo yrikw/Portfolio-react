@@ -98,7 +98,6 @@
 
 import React, {useState} from 'react';
 import { useMediaQuery } from 'react-responsive'
-// import { useHistory } from 'react-router-dom'
  import {Grid, styled, Card, CardHeader, CardMedia, CardContent, CardAction, Collapse, AvatarProps, IconButton, Typography, Avatar, red, CardActions,  }from '@material-ui/core';
 
 
@@ -134,28 +133,15 @@ const [expanded, setExpanded] = React.useState(false);
     return (
         <>
             <Grid item xs={12} md={6} lg={4}> 
-            <Card elevation={0}>
+           
             <div className="card">
               <div className="effect-scale">
                 <img src={image} alt="project" style={{ width: '100%'}}></img>
                </div>
             <CardContent>
-              {/* <p className="date">{date}</p>
-              <h4>{title}</h4>
-              <p className="tech">{tech}</p> */}
               <a href={url} className="btn" >GITHUB+</a>
             </CardContent>
-            {/* <CardActions disableSpacing>
-
-                <ExpandMore
-                expand={expanded}
-                onClick={handleExpandClick}
-                aria-expanded={expanded}
-                aria-label="show more"
-                >
-                <img src={`${process.env.PUBLIC_URL}/downarrow.png`} className="arrow" />
-                </ExpandMore>
-            </CardActions> */}
+           
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                 <Typography variant="body2" color="text.secondary">
@@ -164,7 +150,6 @@ const [expanded, setExpanded] = React.useState(false);
                 </CardContent>
             </Collapse>
             </div>
-            </Card>
             </Grid>
         </>
     )

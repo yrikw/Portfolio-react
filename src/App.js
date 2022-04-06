@@ -11,16 +11,18 @@ import Contact from './components/Contact/Contact'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
 
-  　　　<BrowserRouter>
+      <div className="App">
+  　　　<BrowserRouter >
         <Switch>
             <Route exact path="/" component={Projects} />
             <Route exact path="/about" component={About} />
             <Route path="/contact" component={Contact} />
          </Switch>
        </BrowserRouter>
+      </div>
 
        <Footerbar />
       

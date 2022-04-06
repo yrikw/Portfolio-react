@@ -1,8 +1,7 @@
 import React from 'react'
 import MediaQuery from "react-responsive";
-import { Link } from "react-router-dom";
-import {Tabs, Tab, Box, styled, AppBar, Toolbar }from '@material-ui/core';
 import DesktopNavbar from './DesktopNavbar'
+import MobileNavbar from './MobileNavbar'
 
 import './Navbar.css'
 
@@ -12,12 +11,12 @@ const Navbar = () => {
           <nav>
               <div className="NavbarContainer">
 
-              <MediaQuery query="(min-width: 414px)">
+              <MediaQuery query="(min-width: 600px)">
                     <DesktopNavbar />
                 </MediaQuery>
 
-                <MediaQuery query="(max-width: 414px)">
-                    <a>mobile</a>
+                <MediaQuery query="(max-width: 600px)">
+                    <MobileNavbar />
                 </MediaQuery>
                 
                 

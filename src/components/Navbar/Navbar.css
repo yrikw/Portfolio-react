@@ -1,26 +1,11 @@
-nav ul {
-  display: flex;
-  line-height: 50px;
-  list-style: none;
-  margin-top: 20px;
-  text-align: center;
-}
-
 nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: white;
-}
-
-nav li {
-  text-decoration: none;
-  width: 120px;
-  text-align: center;
-  letter-spacing: 0.3em;
-  font-weight: 200;
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  width: 100%;
+  font-family: "Spectral", serif;
+  z-index: 30;
 }
 
 nav a {
@@ -33,11 +18,27 @@ h1 {
   text-align: left;
   width: 200px;
   line-height: 50px;
-  margin: 20px;
+  margin: 20px 50px;
 }
 
-.title {
+/* Desktop  */
+
+.Desktop ul {
   display: flex;
+  line-height: 50px;
+  list-style: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Desktop li {
+  text-decoration: none;
+  width: 120px;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-weight: 200;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
 }
 
 .Item-Text {
@@ -60,4 +61,14 @@ h1 {
 }
 .Item-Text:hover::after {
   transform: scale(1, 1);
+}
+
+/* Mobile  */
+.Mobile ul {
+  padding-left: 30px;
+}
+
+.Mobile li {
+  text-align: left;
+  line-height: 40px;
 }
