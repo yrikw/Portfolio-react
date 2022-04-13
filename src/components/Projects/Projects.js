@@ -19,8 +19,12 @@ import { Link as Scroll } from 'react-scroll';
 
 function Project() {
     return (
-        <>
+        <>  
             <div className="homewrapper" className="fade">
+               <p style={{ fontSize: "180px", position: "absolute", bottom: "20px", color:"#afa15b" }}>✴︎</p>
+               <p style={{ fontSize: "80px", position: "absolute", top: "90px", right: "500px", color:"#e8321e" }}>✴︎</p>
+               <p style={{ fontSize: "80px", position: "absolute", bottom: "200px", right: "300px", color:"#406d60" }}>✴︎</p>
+
                <div className="homecontent">
                 
                <h2>HELLO! I'M YURI, WEB DEVELOPER - BASED IN MELBOURNE.</h2>
@@ -32,19 +36,16 @@ function Project() {
                     </Grid>
 
                     <About />
-
-                    <Grid item lg={12}>
+{/* 
+                    <Grid item lg={8}>
                        <p> I'm a design-minded, detail-oriented web developer in Melbourne with passionate about combining beautiful code and user friendly design.</p>
-                    </Grid>
+                    </Grid> */}
 
                   
                 </Grid>
              </div>
            </div>
-        
 
-            
-           
             <Scroll to="projects" smooth={true} className="scroll"><img src={`${process.env.PUBLIC_URL}/down-arrow.png`} alt="Logo" className="nextpage" /></Scroll>
 
             <div className="projectswrapper">

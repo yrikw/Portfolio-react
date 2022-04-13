@@ -19,7 +19,7 @@ const DesktopNavbar = () => {
                        
                         <Grid item xs={6} md={6} lg={6} >
                         <ul className="nav-uls">
-                         <Scroll to="home" smooth={true} className="scroll nav-li"> <li><a href="/about" className="Item-Text">HOME</a></li></Scroll>
+                         {/* <Scroll to="home" smooth={true} className="scroll nav-li"> <li><a href="/about" className="Item-Text">HOME</a></li></Scroll> */}
                          <Scroll to="projects" smooth={true} className="scroll nav-li"> <li><a href="/about" className="Item-Text">PROJECTS</a></li></Scroll>
                          <Scroll to="contact" smooth={true} className="scroll nav-li">  <li><a href="/contact" className="Item-Text">LINK</a></li></Scroll>
                         <li><a href="mailto:mbcrhc@gmail.com" className="Item-Text">CONTACT</a></li>

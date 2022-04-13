@@ -3,6 +3,7 @@
   text-decoration: none;
   letter-spacing: 0.3em;
   font-weight: 200;
+  font-family: "Open Sans", sans-serif;
 }
 
 .footer-content {
@@ -11,8 +12,9 @@
   text-align: left;
 }
 
-.line {
-  color: #afa15b;
+hr {
+  height: 0.5px;
+  background-color: #afa15b;
 }
 
 .footer-content p {
@@ -34,7 +36,6 @@ ul {
   text-align: left;
   color: grey;
   padding-bottom: 25px;
-  font-family: "Open Sans", sans-serif;
   font-size: 13px;
 }
 
@@ -43,6 +44,7 @@ ul {
   width: 120px;
   text-align: left;
   color: grey;
+  font-family: "Open Sans", sans-serif;
 }
 
 .copyright {
