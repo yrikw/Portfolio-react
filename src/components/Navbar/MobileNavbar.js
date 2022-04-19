@@ -81,97 +81,28 @@ const useStyles = makeStyles((theme) => ({
 
 const MobileNavbar = () => {
 
-  const classes = useStyles();
-  const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
-
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
-
-  return (
-    <nav className="Mobile"> 
-        <Toolbar>
-        <Grid container>
-                     <Grid item xs={10} md={9} lg={9} className="title">
+    return (
+        <>
+        <Grid  container>
+          <nav>
+          <div>
+                <Grid container>
+                     <Grid item xs={6} md={6} lg={6} className="title">
                       <h1><a href="/" className="nav_a">YURI IKAWA</a></h1>
                       </Grid> 
 
-  
-                     
-          <IconButton
-            textAlign= "right"
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerOpen}
-            className={clsx(open && classes.hide)}
-          >
-             <Grid item xs={2} md={6} lg={6} className="Icon">
-            <p>✳︎</p>
-            </Grid>
-          </IconButton>
-       
-        </Grid>
-        </Toolbar>
-   
-      
-      <Drawer
-        className={classes.drawer}
-        variant="persistent"
-        anchor="right"
-        open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.drawerHeader}>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ?  <p>✳︎</p>:  <p>✳︎</p>}
-          </IconButton>
-        </div>
-       
-        <List>
-          <ul className="nav-mobile">
-            <Scroll to="home" smooth={true} className="scroll nav-li"> <li><a href="/about" className="Item-Text">HOME</a></li></Scroll>
-            <Scroll to="projects" smooth={true} className="scroll nav-li"> <li><a href="/about" className="Item-Text">PROJECTS</a></li></Scroll>
-            <Scroll to="contact" smooth={true} className="scroll nav-li">  <li><a href="/contact" className="Item-Text">LINK</a></li></Scroll>
-            <li><a href="mailto:mbcrhc@gmail.com" className="Item-Text">CONTACT</a></li>
-          </ul>
-        </List>
-      </Drawer>
-    </nav>
-  );
-    
-    // return (
-    //     <>
-    //     <Grid  container>
-    //       <nav>
-    //       <div>
-    //             <Grid container>
-    //                  <Grid item xs={6} md={6} lg={6} className="title">
-    //                   <h1><a href="/" className="nav_a">YURI IKAWA</a></h1>
-    //                   </Grid> 
-
                        
-    //                     <Grid item xs={6} md={6} lg={6} >
-    //                     <ul className="nav-uls">
-    //                      <Scroll to="home" smooth={true} className="scroll nav-li"> <li><a href="/about" className="Item-Text">HOME</a></li></Scroll>
-    //                      <Scroll to="projects" smooth={true} className="scroll nav-li"> <li><a href="/about" className="Item-Text">PROJECTS</a></li></Scroll>
-    //                      <Scroll to="contact" smooth={true} className="scroll nav-li">  <li><a href="/contact" className="Item-Text">LINK</a></li></Scroll>
-    //                     <li><a href="mailto:mbcrhc@gmail.com" className="Item-Text">CONTACT</a></li>
-    //                     </ul>
-    //                     </Grid>
-    //                   </Grid>  
-    //             </div>
-    //          </nav>
-    //          </Grid>
-    //       </>
-    //    )
+                        <Grid item xs={6} md={6} lg={6} >
+                        <ul className="nav-uls">
+                         <Scroll to="projects" smooth={true} className="scroll nav-li"> <li><a href="/about" className="Item-Text">PROJECTS</a></li></Scroll>
+                        </ul>
+                        </Grid>
+                      </Grid>  
+                </div>
+             </nav>
+             </Grid>
+          </>
+       )
   }
 
  export default MobileNavbar

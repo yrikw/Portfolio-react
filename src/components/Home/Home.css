@@ -1,15 +1,18 @@
-/* .homewrapper {
-  height: 100vh;
-  position: relative;
-  background-color: pink;
+.homecontent {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.homecontent {
+.nextpage {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  bottom: 50px;
+  right: 50px;
   margin: auto;
-  width: 80%;
-  height: 3rem;
-} */
+  width: 80px;
+  cursor: pointer;
+}
+
+.profilepic {
+  width: 50%;
+}

@@ -64,17 +64,20 @@ h1 {
 }
 
 /* Mobile  */
+.Icon {
+  z-index: 30;
+}
+
 .Mobile ul {
   padding-left: 30px;
   font-family: "Open Sans", sans-serif;
 }
 
 .Mobile li {
+  font-size: 18px;
+  line-height: 50px;
   text-align: left;
   line-height: 40px;
   font-family: "Open Sans", sans-serif;
-}
-
-.Mobile li a {
-  font-family: "Open Sans", sans-serif;
+  font-weight: 30px;
 }

@@ -9,11 +9,13 @@ const Footerbar = () => {
     
     return (
           <div className="Footer">
-            <div className="line">
+            {/* <div className="line">
               <hr className="line"/>
-            </div>
+            </div> */}
             
-            <Grid container className="footer-content">
+            <p className="copyright">&#169; 2022 YURI IKAWA</p> 
+
+            {/* <Grid container className="footer-content">
               <Grid item xs={6} md={6} lg={6}>
                  <p>PLEASE FOLLOW AND FEEL FREE TO CONTACT WITH ME.</p>
                  <p className="copyright">&#169; 2022 YURI IKAWA</p>    
@@ -26,7 +28,7 @@ const Footerbar = () => {
                     <li><a href="https://www.instagram.com/_freshpear/">INSTAGRAM</a></li>
               </ul>
               </Grid>
-            </Grid>
+            </Grid> */}
           </div>
        )
   }
