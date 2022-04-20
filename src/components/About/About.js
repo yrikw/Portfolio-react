@@ -17,7 +17,7 @@ function About() {
              <div class="popup_content">
              <Grid container>
              <Grid item item xs={12} md={12} lg={12}>
-            <p><img src={`${process.env.PUBLIC_URL}/Yuriikawa-resume.pdf.png`}/></p>  
+            <p><img src={`${process.env.PUBLIC_URL}/resume.png`}/></p>  
             </Grid>
            </Grid>
         </div>
